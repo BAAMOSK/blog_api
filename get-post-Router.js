@@ -4,9 +4,9 @@ const jsonParser = require('body-parser').json();
 
 const {BlogPosts} = require('./models');
 
-BlogPosts.create('No Worries', 'Blog about worries', 'J.R.R. Tolkien', 1965);
-BlogPosts.create('The Ring', 'spooky ghosts.', 'Mike Williams', 2000);
-BlogPosts.create('The Red House', 'about a house.', 'David Copper', 1997);
+//BlogPosts.create('No Worries', 'Blog about worries', 'J.R.R. Tolkien', 1965);
+//BlogPosts.create('The Ring', 'spooky ghosts.', 'Mike Williams', 2000);
+//BlogPosts.create('The Red House', 'about a house.', 'David Copper', 1997);
 
 router.get('/', (req, res) => {
   res.json(BlogPosts.get());  				
